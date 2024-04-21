@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 50vh;
+}
+#mainHeaderId {
+  width: 100%;
+  height: 200px;
+}
+
+.tempCard {
+  height: 150px;
+}
