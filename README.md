@@ -7,12 +7,14 @@
 ## About this Application:
 
 ## Description
-
+```
+This app searches for weather forecast information through the user's submission of a "city" for search., producing current weather conditions. Geolocation is gained from the user's input and provides a  forecast, and UVindex for the entered "city" using its latitude and longitude. The search can be completed using a city name, city name, state,  country, or providence identifier separated by a comma ex "London, England", for accuracy. The search button enters the user's search and produces a current and future forecast for the location entered.
+```
 ## Live Deployment https://bluniteweatherapp.glitch.me/
 
 ---
 
-## A weather dashboard that uses jQuery ajax to connect to a back-end proxy Express server, and Node-Fetch to retrieve the weather data from openWeatherApi. The openWeather api key is hidden on the back-end using .env, and pushed to github in a gitignore file. However, the only way to protect sensitive information such as api keys and routes is to store them on the back-end and to whitelist which url's can make calls to the server. Time is kept using Moment.js.
+### A weather dashboard that uses jQuery ajax to connect to a back-end proxy Express server, and Node-Fetch to retrieve the weather data from openWeatherApi. The openWeather api key is hidden on the back-end using .env, and pushed to github in a gitignore file. However, the only way to protect sensitive information such as api keys and routes is to store them on the back-end and to whitelist which url's can make calls to the server. Time is kept using Moment.js.
 
 ## <img src="images/Screenshot 2024-04-20 213907.png">
 
