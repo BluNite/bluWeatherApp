@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!--stylesheet css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--icon -->
+    <link rel="icon" href="https://cdn.glitch.global/3ec80efe-e528-415e-a60f-1cdb9e0fd0aa/icons8-cloud-48.png?v=1698401958640" />
+    <!--title-->
+    <title>BluNite Weather Dashboard</title>
+  </head>
+  <!--body container fluid-->
+  <body class="container-fluid">
+    <!--column- set background to image--->
+    <header class="w-100 bg-image">
+      <!--image background-->
+      <img
+        id="mainHeaderId"
+        src="  https://cdn.glitch.global/3ec80efe-e528-415e-a60f-1cdb9e0fd0aa/weatherBanner.jpg?v=1698401977738    "
+      />
+      <div class="mask" style="background-color: rgba(189, 170, 170, 0.514)">
+        <!--d-flex-->
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <h3
+            style="font-size: 40px"
+            class="p-1 text-white text-opacity-75 mb-0"
+          >
+            BluNite Weather Dashboard
+          </h3>
+        </div>
+      </div>
+    </header>
+    <!--container fluid-->
+    <div class="container-fluid card">
+      <!--row-->
+      <div class="row bg-info p-1 mt-1">
+        <!--col-4-->
+        <div class="col-md-4 badge-secondary">
+          <!--col-8-width-100-flex col--->
+          <div class="bg-light w-100 flex-column col-md-8 mt-1 p-1">
+            <!--card header-->
+            <div
+              style="font-size: 25px; font-weight: 600"
+              class="card-header badge-primary text-center text-info"
+            >
+              City Search
+            </div>
+            <!--card body-->
+            <div style="background-color: oldlace" class="card-body mb-3">
+              <!--div input group-->
+              <div class="input-group mb-3">
+                <!--input-->
+                <input
+                  id="cityValueId"
+                  type="text"
+                  class="text-md-center form-control"
+                  placeholder="Enter City"
+                  aria-label="City Input"
+                  aria-describedby="button-addon2"
+                />
+                <!--city submit button-->
+                <button
+                  class="btn btn-group btn-primary m-1"
+                  type="text"
+                  id="submitBtnId"
+                >
+                  SEARCH
+                </button>
+              </div>
+              <div
+                class="border-secondary mb-md-auto col-1 bg-opacity-25 w-100"
+              >
+                <table
+                  id="tableId"
+                  class="text-center m-auto text-info table w-25"
+                >
+                  <tr id="tr-pastCities" scope="row">
+                    <th id="th-PastCitiesId" class="th-pastCities">
+                      
+                    </th>
+                  </tr>
+                </table>
+              </div>
+
+              <!--clear button-->
+              <input
+                id="clearBtnId"
+              type="button" value="Clear"  class="btn  btn-danger"></input>
+                
+	</button>
+            </div>
+          </div>
+        </div>
+        <!--col card -->
+        <div
+          style="width: 75%; background-color: oldlace"
+          class="p-2 p-1 card col"
+        >
+          <!--card-header-->
+          <div
+            style="
+              border-radius: 2px;
+              justify-items: center;
+              font-weight: 600;
+              font-size: 28px;
+            "
+            class="text-center badge-primary text-info card-header"
+          >
+          <h2>  Weather Conditions  </h2>
+            
+          </div>
+
+          <!--card body-->
+
+          <div class="card-body bg-info w-100">
+            
+            <!--row-->
+            <div class="row bg-info">
+              <!--card- col-12-->
+              <div id="weatherDataId" class="bg-info col-8">
+                <!--col card--->
+                <div class="currentCity-data bg-info col-12 text-primary card">
+                  <!--card body col-->
+                  <!--card to hold current weather conditions-->
+                  <div class="card-body bg-info text-white col-12">
+                    <h3 id="cityNameId"></h3>
+                    <h4 id="cityConditionId"></h4>
+                    <h4 id="tempId"></h4>
+                    <h4 id="humidityId"></h4>
+                    <h4 id="windSpeedId"></h4>
+                     <h4 id="highTemp"></h4>
+                    <h4 id="uvIndexId"></h4>
+                  </div>
+                </div>
+              </div>
+              <icon
+              id="icon"
+                style="font-size: 40px"
+                class="card bg-primary text-md-center mt-6 col-md-4"
+             ></icon>
+               
+            </div>
+          </div>
+
+          <!--row cards for weekly forecast-->
+          <div class="justify-content-center mt-0 p-3 row w-100 text-center">
+             <div
+            style="
+              border-radius: 2px;
+              justify-items: center;
+              font-weight: 600;
+              font-size: 28px;
+            "
+            class="text-center badge-primary text-info card-header"
+          >
+          <h2>  5 Day Forecast  </h2>
+            
+          </div>
+            <!--col-->
+            <div   class="    card m-1 bg-primary    text-white col-sm-2">
+              <!--card body-->
+              <div id="card-1"   class=" text-white  border-2  border-bottom border-light card-header-title p-4 bg-primary ">
+            </div>
+              <div id="temp-1"></div>
+               <div id="humid-1"></div>
+                <div id="icon-1"></div>
+               
+               
+               </div>
+            <!--col-->
+            <div   class="card bg-primary text-white m-1 col-sm-2">
+              <!--card body-->
+              <div  id="card-2" class="  border-2  border-bottom border-light  card-header-title p-4 bg-primary"></div>
+               <div id="temp-2"></div>
+                <div id="humid-2"></div>
+                 <div id="icon-2"></div>
+               
+               
+            </div>
+             <!--col-->
+                <div   class="card bg-primary text-white m-1 col-sm-2">
+              <!--card body-->
+              <div  id="card-3"  class="  border-2  border-bottom border-light   card-header-title p-4 bg-primary"></div>
+               <div id="temp-3"></div>
+                <div id="humid-3"></div>
+                <div id="icon-3"></div>
+               
+            </div>
+            <!--col-->
+            <div class="   card bg-primary text-white m-1 col-sm-2">
+              <!--card body-->
+              <div   id="card-4" class=" border-2  border-bottom border-light   card-header-title p-4 bg-primary   "></div>
+               <div id="temp-4"></div>
+                <div id="humid-4"></div>
+                 <div id="icon-4"></div>
+               
+               
+            </div>
+            <!--col-->
+            <div class="card bg-primary text-white m-1 col-sm-2">
+              <!--card body-->
+              <div  id="card-5"    class="  border-2  border-bottom border-light   p-4 card-header-title bg-primary"></div>
+               <div id="temp-5"></div>
+               <div id="humid-5"></div>
+                <div id="icon-5"></div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+      <!-- websiteGlitch -->
+      <script href="https://bluniteweatherapp.glitch.me"></script>
+
+ <!-- MDB -->
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+      ></script>
+      <!--moment.js-->
+      <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+      <!--jQuery cdn-->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<!--apps js-->
+      <script type="text/javascript" src="app.js"></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    --></div>
+  </body>
+</html>
