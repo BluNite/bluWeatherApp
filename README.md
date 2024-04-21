@@ -12,7 +12,7 @@
 
 ---
 
-## A weather dashboard that uses jQuery ajax to connect to a back-end proxy Express server, and Node-Fetch to retrieve the weather data from openWeatherApi. The openWeather api key is hidden on the back-end using .env, and pushed to github in a gitignore file. However, the only way to protect sensitive information such as api keys and routes is to store them on a beck-end server and to whitelist which url's can make calls to the server. Time is kept using Moment.js.
+## A weather dashboard that uses jQuery ajax to connect to a back-end proxy Express server, and Node-Fetch to retrieve the weather data from openWeatherApi. The openWeather api key is hidden on the back-end using .env, and pushed to github in a gitignore file. However, the only way to protect sensitive information such as api keys and routes is to store them on the back-end and to whitelist which url's can make calls to the server. Time is kept using Moment.js.
 
 ## <img src="images/Screenshot 2024-04-20 213907.png">
 
