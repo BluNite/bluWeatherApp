@@ -10,7 +10,7 @@
 
 ---
 
-## A weather dashboard that is connected to the Free Weather Api using jQuery ajax for fetching the weather data. Time is kept using Moment.js cdn.
+## A weather dashboard that uses jQuery ajax to connect to a back-end proxy Express server, and Node-Fetch to retrieve the weather data from openWeatherApi. The openWeather api key is hidden on the back-end using .env, and pushed to github in a gitignore file. However, the only way to protect sensitive information such as api keys and routes is to store them on a beck-end server and to whitelist which url's can make calls to the server.   Time is kept using Moment.js.
 
 ---
 
