@@ -8,11 +8,13 @@
 
 ## Description
 
+## Live Deployment https://bluniteweatherapp.glitch.me/
+
 ---
 
 ## A weather dashboard that uses jQuery ajax to connect to a back-end proxy Express server, and Node-Fetch to retrieve the weather data from openWeatherApi. The openWeather api key is hidden on the back-end using .env, and pushed to github in a gitignore file. However, the only way to protect sensitive information such as api keys and routes is to store them on a beck-end server and to whitelist which url's can make calls to the server. Time is kept using Moment.js.
 
----
+## <img src="images/Screenshot 2024-04-20 213907.png">
 
 ![automated like clockwork](https://cdn.glitch.global/3ec80efe-e528-415e-a60f-1cdb9e0fd0aa/openweather-logo-3CE20F48B5-seeklogo.com.png?v=1698899440663) ![automated like clockwork](https://cdn.glitch.global/3ec80efe-e528-415e-a60f-1cdb9e0fd0aa/1_vwAe0QwGV9nOupl61bbmqw.jpg?v=1698899425568)
 
