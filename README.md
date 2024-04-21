@@ -8,7 +8,9 @@
 
 ## Description
 ```
-This app searches for weather forecast information through the user's submission of a "city" for search., producing current weather conditions. Geolocation is gained from the user's input and provides a  forecast, and UVindex for the entered "city" using its latitude and longitude. The search can be completed using a city name, city name, state,  country, or providence identifier separated by a comma ex "London, England", for accuracy. The search button enters the user's search and produces a current and future forecast for the location entered.
+This app searches for current and future weather data  through the user's submission of a "city" for search., producing current weather conditions.
+
+
 ```
 ## Live Deployment https://bluniteweatherapp.glitch.me/
 
