@@ -8,7 +8,8 @@
 
 ## Description
 ```
-This app searches for current and future weather data  through the user's submission of a "city" for search., producing current weather conditions.
+This app searches for current and future weather data from the user's submission of a "city" for search.,
+producing current, and future weather conditions.
 
 
 ```
