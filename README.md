@@ -17,7 +17,7 @@ producing current, and future weather conditions.
 
 ---
 
-### A weather dashboard that uses jQuery ajax to connect to a back-end proxy Express server, and Node-Fetch to retrieve the weather data from openWeatherApi. This was a front-end project usingopenWeather api, however I didn't want the key exposed on the front/in the browser. The api key is hidden on the back-end using .env, and pushed to github in a gitignore file. However, the only way to protect sensitive information such as private api keys is to store them on the back-end. This is a method I chose for exposure to node-fetch, and whitelisting methods/solutions using a proxy server. Time and dates for the project is kept using Moment.js.
+### A weather dashboard that uses jQuery ajax to connect to a back-end proxy Express server, and Node-Fetch to retrieve the weather data from openWeatherApi. This was a front-end project usingopenWeather api, however I didn't want the key exposed on the front/in the browser. The api key is hidden on the back-end using .env, and pushed to github in a gitignore file. However, the only way to protect sensitive information such as private api keys is to store them on the back-end. This is a method I chose for exposure to node-fetch, and whitelisting methods/solutions using a proxy server. Time and dates for the dashboard is kept using Moment.js.
 
 ## <img src="images/Screenshot 2024-04-20 213907.png">
 
